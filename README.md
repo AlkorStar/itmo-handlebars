@@ -115,7 +115,12 @@ itmo-handlebars/
 │   └── hbs-runner.js          # CLI точка входа
 ├── src/
 │   ├── renderer.js            # Основная логика (рендер, CLI utils)
-│   └── server.js              # HTTP сервер + API
+│   ├── server.js              # HTTP сервер + API
+│   └── engines
+│       ├── handlebars.js
+│       ├── index.js
+│       ├── nunjucks.js
+│       └── pug.js
 ├── public/
 │   ├── index.html             # HTML обёртка песочницы
 │   ├── app.jsx                # React компонент (с выбором движков)
@@ -128,6 +133,7 @@ itmo-handlebars/
 ├── test/
 │   └── renderer.test.mjs      # 5 тестов Vitest
 ├── package.json
+├── REPORT.md
 └── README.md
 ```
 
